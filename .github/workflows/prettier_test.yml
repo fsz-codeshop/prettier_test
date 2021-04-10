@@ -19,6 +19,7 @@ jobs:
       uses: creyD/prettier_action@dev
       with:
         # This part is also where you can pass other options, for example:
+        prettier_version: 2.1.2
         prettier_options: --write *.{js,md}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
