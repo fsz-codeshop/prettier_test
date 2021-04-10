@@ -1,6 +1,7 @@
-function test() {
-  var test = "test";
-  return test;
+function test (){
+  var test  = "test";
+  return  test
 }
 
-test();
+
+test()
