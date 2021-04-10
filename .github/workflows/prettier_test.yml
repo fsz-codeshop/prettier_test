@@ -18,6 +18,6 @@ jobs:
     - name: Prettify code
       uses: creyD/prettier_action@dev
       with:
-        prettier_options: --write **/*.js --print-width 160
+        prettier_options: --write **/*.js
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
