@@ -15,11 +15,11 @@ jobs:
         ref: ${{ github.head_ref }}
 
     - name: Prettify code
-      #uses: creyD/prettier_action@87e1553a825c17f83a666a2fa0f4320c8e39c984
-      #uses: fsz-codeshop/prettier_action@issue-37-dry-run-reporting-unpretty
-      uses: fsz-codeshop/prettier_action@debug
+      #ses: creyD/prettier_action@87e1553a825c17f83a666a2fa0f4320c8e39c984
+      uses: fsz-codeshop/prettier_action@issue-37-dry-run-reporting-unpretty
+      #uses: fsz-codeshop/prettier_action@debug
       with:
-        prettier_options: --write **/*.js
+        prettier_options: --check **/*.js
         dry: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
