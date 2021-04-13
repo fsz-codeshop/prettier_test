@@ -20,6 +20,6 @@ jobs:
       uses: fsz-codeshop/prettier_action@debug
       with:
         prettier_options: --check **/*.js
-        dry: true
+        dry: false
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}    
