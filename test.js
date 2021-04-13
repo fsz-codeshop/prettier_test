@@ -1,6 +1,7 @@
 function test() {
   var test = "test";
-  return test;
+  return test
 }
 
-test();
+test()
+
