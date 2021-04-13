@@ -16,7 +16,8 @@ jobs:
         ref: ${{ github.head_ref }}
 
     - name: Prettify code
-      uses: creyD/prettier_action@dev
+      #uses: creyD/prettier_action@dev
+      uses: fsz-codeshop/prettier_action@issue-37-dry-run-reporting-unpretty
       with:
         prettier_options: --write **/*.js
         dry: true
